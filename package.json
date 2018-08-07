@@ -6,7 +6,8 @@
   "scripts": {
     "test": "eslint --fix src/",
     "precommit": "npm test",
-    "prepush": "npm test"
+    "prepush": "npm test",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
