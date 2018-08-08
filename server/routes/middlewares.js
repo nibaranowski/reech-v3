@@ -1,5 +1,5 @@
-const User = require('../models/user');
-const token = require('../services/token');
+import User from '../models/user';
+import token from '../services/token';
 
 export default {
   loginRequired: (req, res, next) => {

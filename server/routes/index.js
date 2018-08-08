@@ -1,6 +1,6 @@
-const Authentication = require('../controllers/authentication');
-const Middlewares = require('./middlewares');
-const api = require('./api');
+import Authentication from '../controllers/authentication';
+import Middlewares from './middlewares';
+import api from './api';
 
 const router = require('express').Router();
 
