@@ -1,10 +1,10 @@
-import User from '../models/user';
-import token from '../services/token';
+const User = require('../models/user');
+const token = require('../services/token');
 
 export default {
   loginRequired: (req, res, next) => {
     if (!req.header('Authorization')) return res.status(401).send({message: 'Please make sure your request has an Authorization header.'});
-    
+
     // Validate jwt
     let try_token = req.header('Authorization').split(' ')[0];
     token.verifyToken(try_token, (err, payload) => {

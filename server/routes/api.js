@@ -1,4 +1,4 @@
-import Authentication from '../controllers/authentication';
+const Authentication = require('../controllers/authentication');
 
 const router = require('express').Router();
 
