@@ -1,19 +1,10 @@
-const express = require("express");
-const http = require("http");
-const bodyParser = require("body-parser");
-const morgan = require("morgan");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const routers = require("./routes");
-
-
-// import express from 'express';
-// import http from 'http';
-// import bodyParser from 'body-parser';
-// import morgan from 'morgan';
-// import mongoose from 'mongoose';
-// import cors from 'cors';
-// import routers from './routes';
+import express from 'express';
+import http from 'http';
+import bodyParser from 'body-parser';
+import morgan from 'morgan';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import routers from './routes';
 
 require('dotenv').config();
 const app = express();
